@@ -5,50 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-/*
-public class LoginPage {
-	//2. Constructor
-		public LoginPage(WebDriver driver) {
-			
-			PageFactory.initElements(driver, this);
-		}
-		
-	//1. Element identification
-		
-		@FindBy(id = "email")
-		private WebElement emailTextField;
-		
-		@FindBy(id = "password")
-		private WebElement passwordTextField;
-		
-		@FindBy(xpath = "//button[text()='Login']")
-		private WebElement loginButton;
-
-
-		//4. getter methods
-		
-		
-		public WebElement getEmailTextField() {
-			return emailTextField;
-		}
-
-		public WebElement getPasswordTextField() {
-			return passwordTextField;
-		}
-
-		public WebElement getLoginButton() {
-			return loginButton;
-		}
-
-
-		//3. Business Logic
-		public void loginUser(String email, String password) {
-			emailTextField.sendKeys(email);
-			passwordTextField.sendKeys(password);
-			loginButton.click();
-
-		}
-		*/
 
 public class LoginPage {
 
@@ -108,18 +64,6 @@ public class LoginPage {
 		passwordTextField.sendKeys(password);
 		login1Button.click();
 
-	}
-
-	public boolean verifyRegisterSuccessfullMsg() {
-		return registeredSuccessfullMsg.isDisplayed();
-	}
-
-	public boolean verifySigninSuccessfullMsg() {
-		return signinSuccessfullMsg.isDisplayed();
-	}
-
-	public void verifyDynamicRegistration(String name) {
-		driver.findElement(By.xpath("//div[text()='" + name + " Registered successfully']")).isDisplayed();
 	}
 
 }
