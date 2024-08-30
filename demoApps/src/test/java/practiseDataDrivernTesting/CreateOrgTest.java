@@ -22,6 +22,9 @@ public class CreateOrgTest {
 		System.out.println(url);
 		System.out.println(userName);
 		System.out.println(passWord);
+		System.out.println(browser);
+
+		
 		
 		//WebDriver driver = new ChromeDriver();
 	//	driver.get(url);
